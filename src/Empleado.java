@@ -51,7 +51,7 @@ public class Empleado {
         return AporteSeguroSocial;
     }
 
-    public void calcularImpuestoRentaAnual() {
+    private void calcularImpuestoRentaAnual() {
 //Primero tengo que invocar este para luego hacer todos los calculos
         double ValorDelAporteAnual;
         double SueldoAnual = getSueldoMensual() * 12;
