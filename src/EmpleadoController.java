@@ -10,7 +10,6 @@ public class EmpleadoController {
     public EmpleadoController() {
         pilaEmpleados = new Stack<Empleado>();
     }
-    Stack<String> prueba = new Stack();
 
     public boolean AgregarEmpleados(Empleado EmpleadoNuevo) {
         Empleado x = buscarEmpleadoPorCedula(EmpleadoNuevo.getCedula());
