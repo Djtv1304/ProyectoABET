@@ -1,13 +1,13 @@
 public class Empleado {
-    private String nombres;
+    private String nombreCompleto;
     private double sueldoMensual;
     private String cedula;
     private String telefono;
     private double AporteSeguroSocial;
     private double ImpuestoRenta;
 
-    public Empleado(String nombres, double sueldo, String cedula, String telefono) {
-        this.nombres = nombres;
+    public Empleado(String nombreCompleto, double sueldo, String cedula, String telefono) {
+        this.nombreCompleto = nombreCompleto;
         this.sueldoMensual = sueldo;
         this.cedula = cedula;
         this.telefono = telefono;
@@ -15,8 +15,8 @@ public class Empleado {
         calcularImpuestoRentaAnual();
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setNombreCompleto(String nombreCompleto) {
+        this.nombreCompleto = nombreCompleto;
     }
 
     public void setSueldoMensual(double sueldoMensual) {
@@ -31,8 +31,8 @@ public class Empleado {
         this.telefono = telefono;
     }
 
-    public String getNombres() {
-        return nombres;
+    public String getNombreCompleto() {
+        return nombreCompleto;
     }
 
     public double getSueldoMensual() {
@@ -93,7 +93,7 @@ public class Empleado {
     @Override
     public String toString() {
         return  "--------------------------------" + '\n' +
-                "Nombres: " + nombres + '\n' +
+                "Nombres: " + nombreCompleto + '\n' +
                 "Sueldo mensual: " + sueldoMensual + '\n' +
                 "Cédula: " + cedula + '\n' +
                 "Teléfono: " + telefono + '\n' +

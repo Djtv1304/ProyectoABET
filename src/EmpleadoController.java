@@ -28,8 +28,8 @@ public class EmpleadoController {
 
         while (izquierda <= derecha) {
             int medio = (izquierda + derecha) / 2;
-            pilaEmpleados.sort(Comparator.comparing(Empleado::getNombres)); //Ordeno la pila
-            int comparacion = nombreBuscado.compareTo(pilaEmpleados.elementAt(medio).getNombres());
+            pilaEmpleados.sort(Comparator.comparing(Empleado::getNombreCompleto)); //Ordeno la pila
+            int comparacion = nombreBuscado.compareTo(pilaEmpleados.elementAt(medio).getNombreCompleto());
 
             if (comparacion == 0) {
                 return pilaEmpleados.elementAt(medio);
@@ -74,7 +74,7 @@ public class EmpleadoController {
                 if (e.getCedula().equals(CedulaBuscada)) {
                     e.setCedula(newCedula);
                     e.setSueldoMensual(newSueldo);
-                    e.setNombres(newNombre);
+                    e.setNombreCompleto(newNombre);
                     e.setTelefono(newTelefono);
                     return true;
                 }
@@ -89,7 +89,7 @@ public class EmpleadoController {
         sb.append("-\tLista de nombres los empleados\n");
 
         for (Empleado e : pilaEmpleados) {
-            sb.append("Nombre: ").append(e.getNombres()).append("\n");
+            sb.append("Nombre: ").append(e.getNombreCompleto()).append("\n");
         }
 
         return sb;
