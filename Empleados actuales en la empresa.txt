@@ -1,0 +1,11 @@
+--------------------------------
+Nombres: Diego
+Sueldo mensual: 4000.0
+Cédula: 1724016660
+Teléfono: +593 98 490 5968
+Aporte al seguro social mensual: 374.0
+Aporte al seguro social anual: 4488.0
+Impuesto a la renta mensual: 750.0
+Impuesto a la renta anual: 9000.0
+Sueldo mensual a recibir: 2876.0
+Sueldo anual a recibir: 34512.0
